@@ -1,0 +1,95 @@
+body{
+    background-color: #e5e2e2;
+}
+
+.c-item{
+    height: 500px;
+}
+
+.c-img{
+    height: 100%;
+}
+
+.ins{
+    margin-top: 10%;
+    font-family: source serif pro;
+}
+
+.about{
+    margin-bottom: -70px;
+    padding-bottom: 0;
+    margin-top: 10%;
+    font-family: source serif pro;
+}
+
+.t-img{
+    height: 260px;
+    padding-top: 15px;
+}
+
+.a-img{
+    height: 300px;
+    border-radius: 150px;
+    padding-top: -5px;
+}
+
+.a-col1{
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.a-col2{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin-right: 100px;
+    
+}
+
+.c-card{
+    height: 400px;  
+}
+
+.c-contact{
+    background: no-repeat center center;
+    background-size: cover;
+    color: whitesmoke;
+    width: 600px;
+    
+}
+
+.color-overlay{
+    min-height: 60vh;
+    background-color: rgba(0,0,0,.5);
+}
+
+.nav-link{
+    color: whitesmoke;
+}
+
+.card-title{
+    font-family: source serif pro;
+}
+
+.card-text{
+    font-family: inria serif;
+}
+
+.about-text{
+    font-family: inria serif;
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 767.98px) {
+    .color-overlay {
+        min-height: 30vh;
+    }
+}
+
+
+ 
+
+
+  
