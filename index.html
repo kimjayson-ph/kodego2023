@@ -106,37 +106,41 @@
     </nav>
     <!--Header-->
     <header class="container-fluid headerbg" id="home">
-      <div id="carouselExample" class="carousel slide container-fluid mt-5">
+      <div
+        id="carouselExampleautoplaying"
+        class="carousel slide container-fluid mt-5"
+        data-bs-ride="carousel"
+      >
         <div class="carousel-inner">
-          <div class="carousel-item active c-item">
+          <div class="carousel-item active c-item" data-bs-interval="3000">
             <img
               src="images/image1.jpg"
               class="d-block w-100 c-img"
               alt="..."
             />
           </div>
-          <div class="carousel-item c-item">
+          <div class="carousel-item c-item" data-bs-interval="3000">
             <img
               src="images/image2.jpg"
               class="d-block w-100 c-img"
               alt="..."
             />
           </div>
-          <div class="carousel-item c-item">
+          <div class="carousel-item c-item" data-bs-interval="3000">
             <img
               src="images/image3.jpg"
               class="d-block w-100 c-img"
               alt="..."
             />
           </div>
-          <div class="carousel-item c-item">
+          <div class="carousel-item c-item" data-bs-interval="3000">
             <img
               src="images/image4.jpg"
               class="d-block w-100 c-img"
               alt="..."
             />
           </div>
-          <div class="carousel-item c-item">
+          <div class="carousel-item c-item" data-bs-interval="3000">
             <img
               src="images/image5.jpg"
               class="d-block w-100 c-img"
@@ -147,7 +151,7 @@
         <button
           class="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExample"
+          data-bs-target="#carouselExampleautoplaying"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -156,7 +160,7 @@
         <button
           class="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExample"
+          data-bs-target="#carouselExampleautoplaying"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -191,6 +195,51 @@
             explicabo. Non ipsam temporibus accusamus recusandae a, quod
             consequatur nostrum animi facilis. Nam expedita sit reiciendis
             necessitatibus rerum molestias, laudantium labore.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Icon -->
+    <section class="container">
+      <div class="row d-flex justify-content-evenly text-center mt-5 pt-3">
+        <div class="col">
+          <img class="icon" src="images/find-peace_2.svg" alt="" />
+        </div>
+        <div class="col">
+          <img class="icon" src="images/pray-well_1.svg" alt="" />
+        </div>
+        <div class="col">
+          <img class="icon" src="images/pray-more_1.svg" alt="" />
+        </div>
+      </div>
+      <div class="row d-flex justify-content-evenly text-center mt-4">
+        <div class="col">
+          <h2>Find Peace.</h2>
+        </div>
+        <div class="col">
+          <h2>Pray Your Way.</h2>
+        </div>
+        <div class="col">
+          <h2>Build a Habbit.</h2>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-evenly text-center mt-3 mb-5">
+        <div class="col">
+          <p class="pw">
+            Let God bring you His peace with the Calm Praylist, Daily Gospel,
+            Rosary, & Night Prayer
+          </p>
+        </div>
+        <div class="col">
+          <p class="pw">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+            eveniet molestiae expedita voluptatem suscipit est!
+          </p>
+        </div>
+        <div class="col">
+          <p class="pw">
+            Build a real habit of prayer every day by setting goals, journaling,
+            tracking streaks, and setting reminders
           </p>
         </div>
       </div>
@@ -321,7 +370,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <h1 class="modal-title fs-5" id="exampleModalLabel">
-                New message
+                Let's Talk about your imaginable
               </h1>
               <button
                 type="button"
@@ -349,14 +398,14 @@
             <div class="modal-footer">
               <button
                 type="button"
-                class="btn btn-secondary"
+                class="btn btn-light"
                 data-bs-dismiss="modal"
               >
                 Close
               </button>
               <button
                 type="button"
-                class="btn btn-primary"
+                class="btn btn-secondary"
                 data-bs-dismiss="modal"
               >
                 Send message

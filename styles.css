@@ -10,6 +10,10 @@
     background-color: #a2aebb;
 }
 
+#about{
+    background-color: #a2aebb;
+}
+
 #services{
     
     background-color: #a2aebb;
@@ -32,12 +36,20 @@
 }
 
 .c-img{
-    height: 90%;
+    height: 95%;
     
     
 }
 
+.icon{
+    width: 120px;
+    height: 180px;
+}
 
+.pw{
+    width: 300px;
+    margin: 0 auto;
+}
 
 .ins{
     margin-top: 5%;
@@ -52,6 +64,7 @@
        margin-top: 10%;
     margin-bottom: 2px;
     font-family: source serif pro;
+    
     
 }
 
@@ -75,6 +88,7 @@
     padding-top: 10%;
     padding-bottom: 10%;
     margin-right: 100px;
+    
     
 }
 
@@ -115,6 +129,7 @@
 
 .about-text{
     font-family: inria serif;
+    
 }
 
 
