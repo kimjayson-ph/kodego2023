@@ -1,27 +1,31 @@
 .headerbg{
     
-    background-color: #a2aebb;
+    
 }
 
 #inspirational{
     
-    background-color: #e6e6e6;
+    background-color: #a2aebb;
     padding-bottom: 10%;
 }  
 
+.number{
+    background-color: #a2aebb;
+}
+
 #services{
-    background-color: #e6e6e6;
+    
+    background-color: #a2aebb;
     padding-top: 10%;
     padding-bottom: 10%;
 }
 
-#about{
-    background-color: #a2aebb;
-    color: white;
+#home{
+   
 }
 
 .contactbg{
-    background-color: #a2aebb;
+    
     padding-bottom: 7%;
     padding-top: 6%;
 }
@@ -93,6 +97,7 @@
 
 .n-nav, .footerbg {
     background-color: #f4f4f8;
+    
 }
 
 
