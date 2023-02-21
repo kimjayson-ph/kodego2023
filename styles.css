@@ -1,7 +1,4 @@
-.headerbg{
-    
-    
-}
+
 
 #inspirational{
     
@@ -16,12 +13,12 @@
 #services{
     
     background-color: #a2aebb;
-    padding-top: 10%;
+    padding-top: 6%;
     padding-bottom: 10%;
 }
 
-#home{
-   
+.servi{
+    margin-bottom: 7%;
 }
 
 .contactbg{
@@ -35,18 +32,23 @@
 }
 
 .c-img{
-    height: 100%;
+    height: 90%;
+    
+    
 }
 
 .ins{
-    margin-top: 10%;
+    margin-top: 5%;
+    margin-bottom: 7%;
     font-family: source serif pro;
 }
 
+
+
 .about{
     margin-bottom: -70px;
-    padding-bottom: 0;
-    margin-top: 10%;
+       margin-top: 10%;
+    margin-bottom: 2px;
     font-family: source serif pro;
     
 }
