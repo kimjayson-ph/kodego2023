@@ -109,12 +109,12 @@
     background-color: rgba(0,0,0,.5);
 }
 
-.nav-link {
+.hoverline {
     
     position: relative;
 }
 
-.nav-link::after {
+.hoverline::after {
     opacity: 0;
     transition: all 0.2s;
     position: absolute;
@@ -126,7 +126,7 @@
     content:'';
 }
 
-.nav-link:hover::after{
+.hoverline:hover::after{
     opacity: 1;
 }
 
@@ -147,6 +147,27 @@
 .about-text{
     font-family: inria serif;
     
+}
+
+.hovertalk {
+    
+    position: relative;
+}
+
+.hovertalk::after {
+    opacity: 0;
+    transition: all 0.2s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    content:'';
+}
+
+.hovertalk:hover::after{
+    opacity: 1;
 }
 
 
