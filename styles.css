@@ -2,20 +2,20 @@
 
 #inspirational{
     
-    background-color: #a2aebb;
+    background-color:
     padding-bottom: 10%;
 }  
 
 .number{
-    background-color: #a2aebb;
+    background-color: 
 }
 
 #about{
-    background-color: #a2aebb;
+    background-color: 
 }
 
 #services{
-    
+    background-color: 
    
     padding-top: 6%;
     padding-bottom: 10%;
@@ -30,7 +30,7 @@
 }
 
 .contactbg{
-    background-color: #a2aebb;
+    background-color:
     padding-bottom: 7%;
     padding-top: 6%;
 }
@@ -64,6 +64,10 @@
 .h-1{
     font-family: source serif pro;
     font-size: 52px;
+}
+
+.blogheading{
+    font-family: source serif pro;
 }
 
 
