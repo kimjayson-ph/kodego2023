@@ -1,22 +1,8 @@
-
-
 #inspirational{
-    
-    background-color:
     padding-bottom: 10%;
 }  
 
-.number{
-    background-color: 
-}
-
-#about{
-    background-color: 
-}
-
 #services{
-    background-color: 
-   
     padding-top: 6%;
     padding-bottom: 10%;
 }
@@ -30,7 +16,6 @@
 }
 
 .contactbg{
-    background-color:
     padding-bottom: 7%;
     padding-top: 6%;
 }
@@ -41,9 +26,7 @@
 
 .c-img{
     height: 95%;
-    
-    
-}
+ }
 
 .icon{
     width: 120px;
@@ -70,14 +53,11 @@
     font-family: source serif pro;
 }
 
-
 .about{
     margin-bottom: -70px;
-       margin-top: 10%;
+    margin-top: 10%;
     margin-bottom: 2px;
-    font-family: source serif pro;
-    
-    
+    font-family: source serif pro;      
 }
 
 .t-img{
@@ -122,8 +102,7 @@
 }
 
 .hoverline {
-    
-    position: relative;
+   position: relative;
 }
 
 .hoverline::after {
@@ -144,7 +123,6 @@
 
 .n-nav, .footerbg {
     background-color: #f4f4f8;
-    
 }
 
 
@@ -158,12 +136,10 @@
 
 .about-text{
     font-family: inria serif;
-    
 }
 
 .hovertalk {
-    
-    position: relative;
+     position: relative;
 }
 
 .hovertalk::after {
@@ -181,7 +157,6 @@
 .hovertalk:hover::after{
     opacity: 1;
 }
-
 
 
 *{
