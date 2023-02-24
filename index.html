@@ -28,7 +28,7 @@
   <body>
     <!--Navbar-->
     <nav class="navbar navbar-expand-md fixed-top n-nav">
-      <div class="container-fluid">
+      <div class="container">
         <a class="navbar-brand" href="#about"
           ><small
             class="hoverline"
@@ -36,7 +36,6 @@
               font-family: noto serif display;
               font-weight: bold;
               letter-spacing: 2px;
-              padding-left: 12px;
             "
             >Brian Sebastian</small
           ></a
@@ -51,15 +50,15 @@
           <i class="bx bx-menu"></i>
         </button>
         <div class="collapse navbar-collapse" id="btn">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <ul class="navbar-nav justify-content-end flex-grow-1">
             <!--Home-->
             <li class="nav-item">
-              <a class="nav-link active mx-2 hoverline" href="#home">Home</a>
+              <a class="nav-link active mx-1 hoverline" href="#home">Home</a>
             </li>
 
             <!--About me-->
             <li class="nav-item">
-              <a class="nav-link active mx-2 hoverline" href="#about"
+              <a class="nav-link active mx-1 hoverline" href="#about"
                 >About me</a
               >
             </li>
@@ -67,7 +66,7 @@
             <!--Services-->
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle active mx-2 hoverline"
+                class="nav-link dropdown-toggle active mx-1 hoverline"
                 href="#services"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -89,13 +88,13 @@
             </li>
             <!--Testimonial-->
             <li class="nav-item">
-              <a class="nav-link active hoverline" href="#testimonial"
+              <a class="nav-link active mx-1 hoverline" href="#testimonial"
                 >Testimonial</a
               >
             </li>
             <!-- Blog -->
             <li class="nav-item">
-              <a class="nav-link active mx-2 hoverline" href="#blog">Blog</a>
+              <a class="nav-link active mx-1 hoverline" href="#blog">Blog</a>
             </li>
             <!--Contact me-->
             <li class="nav-item">
@@ -113,17 +112,16 @@
       </div>
     </nav>
     <!-- Hero -->
-    <section id="home">
-      <div class="container">
-        <div class="row flex-md-row-reverse align-items-center g-5 pt-5">
+    <section>
+      <div class="container mb-5" id="home">
+        <div class="row flex-md-row-reverse align-items-center pt-5">
           <div class="col-md">
             <img
-              class="img-fluid d-block mx-lg-auto rounded-5 mt-5 mb-5"
+              class="img-fluid rounded-5 mt-5 mb-5 mx-5"
               src="images/heropic.jpg"
               alt=""
-              width="450"
-              height="300"
-              loading="lazy"
+              width="370px"
+              height="300px"
             />
           </div>
           <div class="col-md">
@@ -133,7 +131,7 @@
             </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
               <button
-                class="btn btn-outline-secondary btn-sm px-4 me-md-2"
+                class="btn btn-outline-secondary btn-sm px-3 me-md-2"
                 type="button"
               >
                 Get Started
@@ -390,8 +388,10 @@
         <!-- row -->
         <div class="row justify-content-center">
           <!-- Column -->
-          <div class="col-md-8 text-center">
-            <h1 class="my-5 blogheading">Blogs</h1>
+          <div class="text-center">
+            <h1 class="my-5 blogheading">
+              <span class="hoverline"> Blogs</span>
+            </h1>
           </div>
         </div>
         <!-- row -->
@@ -615,50 +615,48 @@
       </div>
     </section>
     <!--Footer-->
-    <footer>
-      <div class="footerbg">
-        <!-- Facebook -->
-        <div class="mb-2 pt-4 text-center">
-          <a
-            class="btn text-white btn-floating m-1"
-            style="background-color: #3b5998"
-            href="#1"
-            role="button"
-            ><ion-icon name="logo-facebook"></ion-icon>
-          </a>
-          &nbsp;
-          <!-- Email -->
-          <a
-            class="btn text-white btn-floating m-1"
-            style="background-color: #dd4b39"
-            href="#!"
-            role="button"
-            ><ion-icon name="mail-outline"></ion-icon>
-          </a>
-          &nbsp;
-          <!-- Instagram -->
-          <a
-            class="btn text-white btn-floating m-1"
-            style="background-color: #ac2bac"
-            href="#!"
-            role="button"
-            ><ion-icon name="logo-instagram"></ion-icon>
-          </a>
-          &nbsp;
-          <!-- Linkedin -->
-          <a
-            class="btn text-white btn-floating m-1"
-            style="background-color: #0082ca"
-            href="#!"
-            role="button"
-            ><ion-icon name="logo-linkedin"></ion-icon>
-          </a>
-        </div>
+    <footer class="footerbg">
+      <!-- Facebook -->
+      <div class="pt-4 text-center">
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #3b5998"
+          href="#1"
+          role="button"
+          ><ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        &nbsp;
+        <!-- Email -->
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #dd4b39"
+          href="#!"
+          role="button"
+          ><ion-icon name="mail-outline"></ion-icon>
+        </a>
+        &nbsp;
+        <!-- Instagram -->
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #ac2bac"
+          href="#!"
+          role="button"
+          ><ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        &nbsp;
+        <!-- Linkedin -->
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #0082ca"
+          href="#!"
+          role="button"
+          ><ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </div>
 
-        <!-- Copyright -->
-        <div class="text-center text-black p-3">
-          <small>© 2023 Copyright all rights reserved </small>
-        </div>
+      <!-- Copyright -->
+      <div class="text-center text-black p-3">
+        <small>© 2023 Copyright all rights reserved </small>
       </div>
     </footer>
 

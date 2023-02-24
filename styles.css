@@ -7,10 +7,6 @@
     padding-bottom: 10%;
 }
 
-.servicesform{
-    padding-right: 5%;
-}
-
 .servi{
     margin-bottom: 7%;
 }
@@ -20,23 +16,6 @@
     padding-top: 6%;
 }
 
-.c-item{
-    height: 500px;
-}
-
-.c-img{
-    height: 95%;
- }
-
-.icon{
-    width: 120px;
-    height: 180px;
-}
-
-.pw{
-    width: 300px;
-    margin: 0 auto;
-}
 
 .ins{
     margin-top: 5%;
@@ -54,9 +33,7 @@
 }
 
 .about{
-    margin-bottom: -70px;
     margin-top: 5%;
-    margin-bottom: 2px;
     font-family: source serif pro;      
 }
 
@@ -68,7 +45,7 @@
 .a-img{
     height: 300px;
     border-radius: 150px;
-    padding-top: -5px;
+  
 }
 
 .a-col1{
@@ -79,8 +56,6 @@
 .a-col2{
     padding-top: 10%;
     padding-bottom: 10%;
-    margin-right: 100px;
-    
     
 }
 
@@ -88,13 +63,7 @@
     height: 400px;  
 }
 
-.c-contact{
-    background: no-repeat center center;
-    background-size: cover;
-    color: whitesmoke;
-    width: 600px;
-    
-}
+
 
 .color-overlay{
     min-height: 60vh;
@@ -162,6 +131,7 @@
 *{
     scroll-behavior: smooth;
 }
+
 
 
 
