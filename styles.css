@@ -90,8 +90,8 @@
     opacity: 1;
 }
 
-.n-nav, .footerbg {
-    background-color: #f4f4f8;
+.footerbg {
+    background-color: #EEEEEE;
 }
 
 
@@ -132,9 +132,17 @@
     scroll-behavior: smooth;
 }
 
+.n-nav, .hero{
+    background-color: #3A98B9;
+}
 
+.video, #about, #blog, .subtext, #contactme{
+    background-color: #FFF1DC;
+}
 
-
+#services, #testimonial{
+    background-color: #E8D5C4;
+}
 
 
  
