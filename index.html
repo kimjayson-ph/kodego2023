@@ -130,19 +130,21 @@
               Achieve Your Goals with a Professional Life Coach
             </p>
             <div class="gap-2 d-flex justify-content-md-start mb-2">
-              <button
-                class="btn btn-secondary btn-sm px-3 me-md-2"
-                type="button"
+              <a href="#video"
+                ><button
+                  class="btn btn-secondary btn-sm px-3 me-md-2"
+                  type="button"
+                >
+                  Get Started
+                </button></a
               >
-                Get Started
-              </button>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- Video -->
-    <section class="video">
+    <section class="video" id="video">
       <div class="container pb-5 pt-5">
         <div class="row">
           <div
@@ -359,9 +361,15 @@
               <label for="floatingTextarea2">Message/Inquiry</label>
             </div>
             <div class="mt-3 text-end">
-              <button type="button" class="btn btn-secondary">
-                Send Message
-              </button>
+              <a
+                href=""
+                data-bs-toggle="modal"
+                data-bs-target="#thankyoumodal"
+                data-bs-whatever="@mdo"
+                ><button type="button" class="btn btn-secondary">
+                  Send Message
+                </button></a
+              >
             </div>
           </div>
         </div>
@@ -611,16 +619,23 @@
               </div>
               <div class="form-group mb-3">
                 <label class="form-label">Phone number</label
-                ><input class="form-control" type="tel" />
+                ><input class="form-control" type="number" />
               </div>
               <div class="form-group mb-3">
                 <label class="form-label">Message</label
                 ><textarea class="form-control"></textarea>
               </div>
+
+              <a
+                href=""
+                data-bs-toggle="modal"
+                data-bs-target="#thankyoumodal"
+                data-bs-whatever="@mdo"
+                ><button class="btn btn-secondary mb-5" type="button">
+                  Send Message
+                </button></a
+              >
             </form>
-            <button class="btn btn-secondary mb-5" type="button">
-              Send Message
-            </button>
           </div>
           <div class="col-md text-center mb-2">
             <img
@@ -699,12 +714,46 @@
               >
                 Close
               </button>
+              <a
+                href=""
+                data-bs-toggle="modal"
+                data-bs-target="#thankyoumodal"
+                data-bs-whatever="@mdo"
+                ><button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Send message
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Thank you Modal -->
+      <div class="modal" id="thankyoumodal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Thank you</h5>
               <button
                 type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="btn"
                 class="btn btn-secondary"
                 data-bs-dismiss="modal"
               >
-                Send message
+                Close
               </button>
             </div>
           </div>

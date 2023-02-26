@@ -131,8 +131,12 @@
     scroll-behavior: smooth;
 }
 
-.n-nav, .hero{
-    background-color: #3A98B9;
+.n-nav{
+    background-color:white;
+}
+
+.hero{
+    background-color: #5EBAFF;
 }
 
 .video, #about, #blog, .subtext, #contactme{
