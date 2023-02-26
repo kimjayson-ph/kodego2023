@@ -1,25 +1,19 @@
-#inspirational{
-    padding-bottom: 10%;
-}  
-
-#services{
-    padding-top: 6%;
-    padding-bottom: 10%;
+/* Navbar section */
+.n-nav{
+    background-color: #fff;
+    border-bottom: 1px;
+    
 }
 
-.servi{
-    margin-bottom: 7%;
+/* Hero section */
+.hero{
+    background-image:url(https://victoryfort.church/wp-content/uploads/2022/08/bgc-overview.png) ;
+    object-fit: contain;
 }
 
-.contactbg{
-    padding-bottom: 7%;
-    padding-top: 6%;
-}
-
-
-.section-header{
-   
-    font-family: source serif pro;
+.hero img{
+    opacity: 0.8;
+    
 }
 
 .h-1{
@@ -27,18 +21,24 @@
     font-size: 52px;
 }
 
-.blogheading{
-    font-family: source serif pro;
+/* Video section */
+.video{
+    background-color: lightgrey;
+}
+
+/* About me section */
+#about{
+   
 }
 
 .about{
     margin-top: 5%;
-    font-family: source serif pro;      
+    font-family: source serif pro; 
+       
 }
 
-.t-img{
-    height: 260px;
-    padding-top: 15px;
+.about-text{
+    font-family: inria serif;
 }
 
 .a-img{
@@ -48,22 +48,117 @@
 }
 
 .a-col1{
-    padding-top: 10%;
+    padding-top: 7%;
+    background-color: lightgrey;
     
 }
 
 .a-col2{
-    padding-top: 10%;
+    padding-top: 7%;
+    background-color: lightgray;
+      
+}
+
+
+.aboutpic{
    
+}
+
+/* Services section */
+#services{
+    padding-top: 6%;
+    padding-bottom: 10%;
+}
+
+.servi{
+    margin-bottom: 7%;
+}
+
+.card-text{
+    font-family: inria serif;
+}
+
+/* Testimonial section */
+#testibody {
+	display: grid;
+	place-items: center;
+	   
+}
+
+.bio  {
+	font-family: 'Berkshire Swash', cursive;
+}
+
+.content{
+    font-size: 18px;
+}
+.content p {
+	text-align: justify;
+}
+.content p span {
+	font-size: 48px;
+	margin-right: 20px;
     
 }
 
-.c-card{
-    height: 400px;  
+.img-area {
+	margin: 0 15px 15px 15px;
+}
+.img-area img {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	border: 2px solid
 }
 
+.profile{
+    margin-bottom: 30px;
+    text-align: center;    
+}
 
+.single-item{
+    background: #fff;
+    color: #111;
+    padding: 15px;
+    margin: 50px 15px;
+}
 
+.section-header{
+   
+    font-family: source serif pro;
+}
+
+.section-header{
+    position: relative;
+    
+    text-align: center;
+    font-weight: 900;
+    padding-bottom: 25px;
+    
+}
+
+.section-header span {
+	display: block;
+	font-size: 15px;
+	font-weight: 300;
+}
+
+/* Blog section */
+.blogheading{
+    font-family: source serif pro;
+}
+
+/* Contact section */
+#contactme{
+
+}
+
+/* Footer section */
+.footerbg {
+   
+}
+
+/* Hover */
 .color-overlay{
     min-height: 60vh;
     background-color: rgba(0,0,0,.5);
@@ -89,23 +184,6 @@
     opacity: 1;
 }
 
-.footerbg {
-    background-color: #EEEEEE;
-}
-
-
-.card-title{
-    font-family: source serif pro;
-}
-
-.card-text{
-    font-family: inria serif;
-}
-
-.about-text{
-    font-family: inria serif;
-}
-
 .hovertalk {
      position: relative;
 }
@@ -126,82 +204,29 @@
     opacity: 1;
 }
 
-
 *{
     scroll-behavior: smooth;
-}
-
-.n-nav{
-    background-color:white;
-}
-
-.hero{
-    background-color: #5EBAFF;
-}
-
-.video, #about, #blog, .subtext, #contactme{
-    background-color: #FFF1DC;
-}
-
-#services, #testimonial{
-    background-color: #E8D5C4;
-}
-
-#testibody {
-	display: grid;
-	place-items: center;
-	
-    background-color: #E8D5C4;
-}
-.section-header{
-    position: relative;
-    
-    text-align: center;
-    font-weight: 900;
-    padding-bottom: 25px;
     
 }
 
-.section-header span {
-	display: block;
-	font-size: 15px;
-	font-weight: 300;
-}
 
-.single-item{
-    background: #fff;
-    color: #111;
-    padding: 15px;
-    margin: 50px 15px;
-}
-.profile{
-    margin-bottom: 30px;
-    text-align: center;    
-}
-.img-area {
-	margin: 0 15px 15px 15px;
-}
-.img-area img {
-	height: 200px;
-	width: 200px;
-	border-radius: 50%;
-	border: 2px solid
-}
-.content{
-    font-size: 18px;
-}
-.content p {
-	text-align: justify;
-}
-.content p span {
-	font-size: 48px;
-	margin-right: 20px;
-    color: blueviolet;
-}
 
-.bio  {
-	font-family: 'Berkshire Swash', cursive;
-}
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
 
 
  
