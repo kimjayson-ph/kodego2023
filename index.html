@@ -313,13 +313,14 @@
           </div>
           <!-- Services Form -->
           <div class="col-md-12 col-lg-6 servicesform">
-            <form action="" class="form-control">
+            <form action="" class="form-control needs-validation" novalidate>
               <div class="form-floating mb-3">
                 <input
                   type="text"
                   class="form-control"
                   id="floatingInput"
                   placeholder="name@example.com"
+                  required
                 />
                 <label for="floatingInput">Name</label>
               </div>
@@ -361,16 +362,10 @@
                 ></textarea>
                 <label for="floatingTextarea2">Message/Inquiry</label>
               </div>
-              <div class="mt-3 text-end">
-                <a
-                  href=""
-                  data-bs-toggle="modal"
-                  data-bs-target="#thankyoumodal"
-                  data-bs-whatever="@mdo"
-                  ><button type="button" class="btn btn-secondary">
-                    Send Message
-                  </button></a
-                >
+              <div class="mt-3 pb-1 text-end">
+                <button type="submit" class="btn btn-secondary">
+                  Send Message
+                </button>
               </div>
             </form>
           </div>
@@ -416,57 +411,53 @@
               </div>
             </div>
             <div class="carousel-item">
-              <div class="single-item">
-                <div class="row">
-                  <div class="col-md">
-                    <div class="profile">
-                      <div class="img-area">
-                        <img src="img/2.jpg" alt="" />
-                      </div>
-                      <div class="bio">
-                        <h2>Martin Guptill</h2>
-                      </div>
+              <div class="single-item row">
+                <div class="col-md">
+                  <div class="profile">
+                    <div class="img-area">
+                      <img src="img/2.jpg" alt="" />
+                    </div>
+                    <div class="bio">
+                      <h2>Martin Guptill</h2>
                     </div>
                   </div>
-                  <div class="col-md">
-                    <div class="content">
-                      <p>
-                        <span><i class="fa fa-quote-left"></i></span>Lorem ipsum
-                        dolor sit amet, consectetur adipisicing elit. Vel a eius
-                        excepturi molestias commodi aliquam error magnam
-                        consectetur laboriosam numquam, minima eveniet nostrum
-                        sequi saepe ipsam non ea, inventore tenetur! Corporis
-                        commodi consequatur molestiae voluptatum!
-                      </p>
-                    </div>
+                </div>
+                <div class="col-md">
+                  <div class="content">
+                    <p>
+                      <span><i class="fa fa-quote-left"></i></span>Lorem ipsum
+                      dolor sit amet, consectetur adipisicing elit. Vel a eius
+                      excepturi molestias commodi aliquam error magnam
+                      consectetur laboriosam numquam, minima eveniet nostrum
+                      sequi saepe ipsam non ea, inventore tenetur! Corporis
+                      commodi consequatur molestiae voluptatum!
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="single-item">
-                <div class="row">
-                  <div class="col-md">
-                    <div class="profile">
-                      <div class="img-area">
-                        <img src="img/3.jpg" alt="" />
-                      </div>
-                      <div class="bio">
-                        <h2>Stephen Jones</h2>
-                      </div>
+              <div class="single-item row">
+                <div class="col-md">
+                  <div class="profile">
+                    <div class="img-area">
+                      <img src="img/3.jpg" alt="" />
+                    </div>
+                    <div class="bio">
+                      <h2>Stephen Jones</h2>
                     </div>
                   </div>
-                  <div class="col-md">
-                    <div class="content">
-                      <p>
-                        <span><i class="fa fa-quote-left"></i></span>Lorem ipsum
-                        dolor sit amet, consectetur adipisicing elit. Vel a eius
-                        excepturi molestias commodi aliquam error magnam
-                        consectetur laboriosam numquam, minima eveniet nostrum
-                        sequi saepe ipsam non ea, inventore tenetur! Corporis
-                        commodi consequatur molestiae voluptatum!
-                      </p>
-                    </div>
+                </div>
+                <div class="col-md">
+                  <div class="content">
+                    <p>
+                      <span><i class="fa fa-quote-left"></i></span>Lorem ipsum
+                      dolor sit amet, consectetur adipisicing elit. Vel a eius
+                      excepturi molestias commodi aliquam error magnam
+                      consectetur laboriosam numquam, minima eveniet nostrum
+                      sequi saepe ipsam non ea, inventore tenetur! Corporis
+                      commodi consequatur molestiae voluptatum!
+                    </p>
                   </div>
                 </div>
               </div>
@@ -479,7 +470,6 @@
             data-bs-slide="prev"
           >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
           </button>
           <button
             class="carousel-control-next"
@@ -488,7 +478,6 @@
             data-bs-slide="next"
           >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
           </button>
         </div>
       </div>
@@ -610,33 +599,51 @@
         </div>
         <div class="row" id="contact">
           <div class="col-md pb-2">
-            <form class="form-control">
-              <div class="form-group mb-3">
-                <label class="form-label">Name</label
-                ><input class="form-control" type="text" />
-              </div>
-              <div class="form-group mb-3">
-                <label class="form-label">Email</label
-                ><input class="form-control" type="email" />
-              </div>
-              <div class="form-group mb-3">
-                <label class="form-label">Phone number</label
-                ><input class="form-control" type="number" />
-              </div>
-              <div class="form-group mb-3">
-                <label class="form-label">Message</label
-                ><textarea class="form-control"></textarea>
+            <form action="" class="form-control needs-validation" novalidate>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                  required
+                />
+                <label for="floatingInput">Name</label>
               </div>
 
-              <a
-                href=""
-                data-bs-toggle="modal"
-                data-bs-target="#thankyoumodal"
-                data-bs-whatever="@mdo"
-                ><button class="btn btn-secondary mb-5" type="submit">
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInput1"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput1">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="floatingInput2"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput2">Phone Number</label>
+              </div>
+
+              <div class="form-floating">
+                <textarea
+                  class="form-control"
+                  placeholder="Leave a comment here"
+                  id="floatingTextarea2"
+                  style="height: 100px"
+                ></textarea>
+                <label for="floatingTextarea2">Message/Inquiry</label>
+              </div>
+              <div class="mt-3 mb-2">
+                <button type="submit" class="btn btn-secondary">
                   Send Message
-                </button></a
-              >
+                </button>
+              </div>
             </form>
           </div>
           <div class="col-md text-center mb-2">
