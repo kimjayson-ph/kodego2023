@@ -32,7 +32,7 @@
     
 }
 
-.aboutbg{
+#about{
     background-color: lightgrey;
 }
 
@@ -48,13 +48,13 @@
 
 .a-col1{
     padding-top: 7%;
-    background-color: lightgrey;
+   
     
 }
 
 .a-col2{
     padding-top: 7%;
-    background-color: lightgray;
+    
       
 }
 
@@ -64,6 +64,7 @@
 #services{
     padding-top: 6%;
     padding-bottom: 10%;
+    background-color: lightgray;
 }
 
 .servi{
@@ -119,25 +120,6 @@
     margin: 50px 15px;
 }
 
-.section-header{
-   
-    font-family: source serif pro;
-}
-
-.section-header{
-    position: relative;
-    
-    text-align: center;
-    font-weight: 900;
-    padding-bottom: 25px;
-    
-}
-
-.section-header span {
-	display: block;
-	font-size: 15px;
-	font-weight: 300;
-}
 
 /* Blog section */
 .blogheading{
