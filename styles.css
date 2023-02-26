@@ -23,18 +23,20 @@
 
 /* Video section */
 .video{
-    background-color: lightgrey;
+    background-color: 
 }
 
 /* About me section */
-#about{
-   
-}
+
 
 .about{
     margin-top: 5%;
     font-family: source serif pro; 
-       
+    
+}
+
+.aboutbg{
+    background-color: lightgrey;
 }
 
 .about-text{
@@ -148,6 +150,10 @@
     font-family: source serif pro;
 }
 
+#blog{
+    background-color: lightgrey;
+}
+
 /* Contact section */
 #contactme{
 
@@ -155,7 +161,7 @@
 
 /* Footer section */
 .footerbg {
-   
+   background-color: #111;
 }
 
 /* Hover */
