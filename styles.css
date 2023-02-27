@@ -53,7 +53,8 @@
 }
 
 .a-col2{
-    padding-top: 7%;
+    padding-top: 5%;
+    font-size: 18px;
     
       
 }
@@ -87,7 +88,7 @@
 }
 
 .content{
-    font-size: 18px;
+    font-size: 17px;
 }
 .content p {
 	text-align: justify;
