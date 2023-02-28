@@ -122,6 +122,14 @@
     margin: 50px 15px;
 }
 
+.serviceshover:hover {
+    transform: scale(1.15);
+}
+
+.serviceshover{
+    transition: all 0.3s;
+}
+
 
 
 /* Blog section */
