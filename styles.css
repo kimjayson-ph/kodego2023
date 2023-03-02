@@ -131,6 +131,13 @@
     transition: all 0.3s;
 }
 
+.carousel-control-prev-icon{
+    background-color: lightgray;
+}
+
+.carousel-control-next-icon{
+    background-color: lightgray;
+}
 
 
 /* Blog section */

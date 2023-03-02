@@ -11,6 +11,7 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,6 +22,8 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="script" href="script.js" />
@@ -48,6 +51,9 @@
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#btn"
+          aria-controls="#btn"
+          aria-expanded="true"
+          aria-label="toogle navigation"
         >
           <i class="bx bx-menu"></i>
         </button>
@@ -392,9 +398,11 @@
               </div>
             </a>
           </div>
+
           <!-- Services Form -->
+
           <div class="col-md-12 col-lg-6 servicesform">
-            <form class="form-control needs-validation" novalidate>
+            <form id="my_form" method="post">
               <div class="form-label pt-2">
                 <h4 style="font-family: sans-serif">Book an appointment</h4>
               </div>
@@ -402,31 +410,32 @@
                 <input
                   type="text"
                   class="form-control"
-                  id="floatingInput"
-                  placeholder="name@example.com"
-                  required
+                  name="inputname"
+                  placeholder="name"
                 />
-                <label for="floatingInput">Name</label>
+                <label>Name</label>
               </div>
 
               <div class="form-floating mb-3">
                 <input
                   type="email"
                   class="form-control"
-                  id="floatingInput1"
-                  placeholder="name@example.com"
+                  name="floatingInput1"
+                  placeholder="email@example.com"
                 />
-                <label for="floatingInput1">Email address</label>
+                <label>Email address</label>
               </div>
+
               <div class="form-floating mb-3">
                 <input
                   type="number"
                   class="form-control"
-                  id="floatingInput2"
-                  placeholder="name@example.com"
+                  name="floatingInput2"
+                  placeholder="09123456789"
                 />
-                <label for="floatingInput2">Phone Number</label>
+                <label>Phone Number</label>
               </div>
+
               <select
                 class="form-select mb-3"
                 aria-label="Default select example"
@@ -437,22 +446,21 @@
                 <option value="3">Prayer Meeting</option>
                 <option value="4">Worship Service</option>
               </select>
+
               <div class="form-floating">
                 <textarea
                   class="form-control"
                   placeholder="Leave a comment here"
-                  id="floatingTextarea2"
+                  name="floatingTextarea2"
                   style="height: 100px"
                 ></textarea>
-                <label for="floatingTextarea2">Message/Inquiry</label>
+                <label>Message/Inquiry</label>
               </div>
+
+              <!-- data-bs-toggle="modal"
+              data-bs-target="#thankyoumodal" -->
               <div class="mt-3 pb-1 text-end">
-                <button
-                  type="reset"
-                  class="btn btn-secondary"
-                  data-bs-toggle="modal"
-                  data-bs-target="#thankyoumodal"
-                >
+                <button type="submit" class="btn btn-secondary">
                   Send Message
                 </button>
               </div>
@@ -494,7 +502,7 @@
                 data-bs-target="#exampleModalToggle2"
                 data-bs-toggle="modal"
               >
-                Sign up
+                Next
               </button>
             </div>
           </div>
@@ -528,16 +536,19 @@
                 touch with us at least 3 months before your wedding date. This
                 will give you enough time to experience our Blueprint for
                 Marriage Pre-Marriage coaching and secure all required
-                documents. After filling up your online form
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSeuvFQxM8PtRAYQhEnFXt4XBzbyxZKWVxJVFWBimJqxYuzAYg/viewform"
-                  target="_blank"
-                  >click here</a
-                >, kindly wait for the Pastoral Care Administrator to contact
-                you for a wedding interview schedule.
+                documents. After filling up your online form , kindly wait for
+                the Pastoral Care Administrator to contact you for a wedding
+                interview schedule.
               </p>
             </div>
             <div class="modal-footer">
+              <a
+                class="btn btn-primary"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeuvFQxM8PtRAYQhEnFXt4XBzbyxZKWVxJVFWBimJqxYuzAYg/viewform"
+                target="_blank"
+                role="button"
+                >Sign up</a
+              >
               <button class="btn btn-secondary" data-bs-dismiss="modal">
                 Close
               </button>
@@ -582,7 +593,7 @@
                 data-bs-target="#dedicationToggle2"
                 data-bs-toggle="modal"
               >
-                Sign up
+                Next
               </button>
             </div>
           </div>
@@ -617,16 +628,19 @@
                 2023. We highly encourage you to apply at least one (1) month
                 prior the ceremony. This will give you enough time to experience
                 our Heart of Parenting lessons, and meet with a parenting coach
-                for two (2) meetings. After filling up your online form
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSd-mVMFDj6X26TkO2gj-er99bdOxXqWtCbyPFnA6BK7Knl4zg/formResponse"
-                  target="_blank"
-                  >click here</a
-                >, kindly wait for the Pastoral Care Administrator to contact
-                you for a baby-dedication interview schedule.
+                for two (2) meetings. After filling up your online form , kindly
+                wait for the Pastoral Care Administrator to contact you for a
+                baby-dedication interview schedule.
               </p>
             </div>
             <div class="modal-footer">
+              <a
+                class="btn btn-primary"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSd-mVMFDj6X26TkO2gj-er99bdOxXqWtCbyPFnA6BK7Knl4zg/formResponse"
+                target="_blank"
+                role="button"
+                >Sign up</a
+              >
               <button class="btn btn-secondary" data-bs-dismiss="modal">
                 Close
               </button>
@@ -666,12 +680,15 @@
             </div>
             <div class="modal-footer">
               <a
-                class="btn btn-secondary"
+                class="btn btn-primary"
                 href="https://docs.google.com/forms/d/e/1FAIpQLSfBfqoKG-Pc_b6EuvwF1XXOna9-jydXHKYVoK2uqkrs3qPjYg/viewform"
                 target="_blank"
                 role="button"
                 >Sign up</a
               >
+              <button class="btn btn-secondary" data-bs-dismiss="modal">
+                Close
+              </button>
             </div>
           </div>
         </div>
@@ -897,6 +914,7 @@
                 class="card-img-top"
                 src="images/blog5.jpg"
                 alt="wrappixel kit"
+                style="height: 580px"
               />
               <div class="date-pos text-center text-white p-3 bg-black">
                 NOV 12, 2022
@@ -933,6 +951,7 @@
                     class="card-img-top"
                     src="images/blog4.jpg"
                     alt="wrappixel kit"
+                    style="height: 217px"
                   />
                   <div class="date-pos text-center text-white p-3 bg-black">
                     DEC 18, 2022
@@ -1222,8 +1241,56 @@
         <small>© 2023 Copyright all rights reserved </small>
       </div>
     </footer>
+
     <script>
       AOS.init();
+      $(document).ready(function () {
+        $("#my_form").validate({
+          rules: {
+            inputname: {
+              required: true,
+            },
+            floatingInput1: {
+              required: true,
+            },
+            floatingInput2: {
+              required: true,
+            },
+            floatingTextarea2: {
+              required: true,
+            },
+          },
+          messages: {
+            name: "Please enter name",
+            floatingInput1: "Please enter email",
+            floatingInput2: "Please enter number",
+            floatingTextarea2: "Please enter your message",
+          },
+
+          errorElement: "div",
+          errorPlacement: function (error, element) {
+            error.addClass("invalid-feedback");
+            error.insertAfter(element);
+          },
+          highlight: function (element) {
+            $(element).removeClass("is-valid").addClass("is-invalid");
+          },
+          unhighlight: function (element) {
+            $(element).removeClass("is-invalid").addClass("is-valid");
+          },
+          submitHandler: function (form, event) {
+            event.preventDefault();
+            document.getElementById("my_form").reset();
+            $("#my_form ")
+              .find(".invalid-feedback")
+              .removeClass("invalid-feedback");
+            $("#thankyoumodal").modal("show");
+          },
+        });
+      });
+      // if ($("#my_form").valid()) {
+      //   $("#thankyoumodal").modal("show");
+      // }
     </script>
     <script
       type="module"
