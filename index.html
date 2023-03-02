@@ -914,7 +914,7 @@
                 class="card-img-top"
                 src="images/blog5.jpg"
                 alt="wrappixel kit"
-                style="height: 580px"
+                style="height: 588px"
               />
               <div class="date-pos text-center text-white p-3 bg-black">
                 NOV 12, 2022
@@ -1106,12 +1106,19 @@
               ></button>
             </div>
             <div class="modal-body">
-              <form>
+              <!-- Form modal -->
+              <form class="needs-validation" novalidate>
                 <div class="">
                   <label for="recipient-name" class="col-form-label"
                     >Name:</label
                   >
-                  <input type="text" class="form-control" id="recipient-name" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="recipient-name"
+                    required
+                  />
+                  <div class="invalid-feedback">Please choose a username.</div>
                 </div>
 
                 <div class="">
@@ -1122,7 +1129,9 @@
                     type="email"
                     class="form-control"
                     id="recipient-name0"
+                    required
                   />
+                  <div class="invalid-feedback">Please choose a username.</div>
                 </div>
                 <div class="">
                   <label for="recipient-name1" class="col-form-label"
@@ -1132,13 +1141,20 @@
                     type="number"
                     class="form-control"
                     id="recipient-name1"
+                    required
                   />
+                  <div class="invalid-feedback">Please choose a username.</div>
                 </div>
                 <div class="">
                   <label for="message-text" class="col-form-label"
                     >Message:</label
                   >
-                  <textarea class="form-control" id="message-text"></textarea>
+                  <textarea
+                    class="form-control"
+                    id="message-text"
+                    required
+                  ></textarea>
+                  <div class="invalid-feedback">Please choose a username.</div>
                 </div>
                 <div class="modal-footer">
                   <button
@@ -1149,12 +1165,7 @@
                     Close
                   </button>
 
-                  <button
-                    type="reset"
-                    class="btn btn-secondary"
-                    data-bs-toggle="modal"
-                    data-bs-target="#thankyoumodal"
-                  >
+                  <button type="submit" class="btn btn-secondary">
                     Send message
                   </button>
                 </div>
@@ -1296,6 +1307,32 @@
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
     ></script>
+
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (() => {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach((form) => {
+          form.addEventListener(
+            "submit",
+            (event) => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
