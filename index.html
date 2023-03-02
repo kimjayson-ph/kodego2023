@@ -160,10 +160,10 @@
         </div>
         <div class="row">
           <div
-            data-aos="slide-right"
             class="embed-responsive embed-responsive-4by3 col-md d-flex justify-content-center"
           >
             <iframe
+              data-aos="slide-right"
               class="embed-responsive-item img-thumbnail"
               width="350"
               height="220"
@@ -174,10 +174,10 @@
             ></iframe>
           </div>
           <div
-            data-aos="slide-right"
             class="embed-responsive embed-responsive-4by3 col-md d-flex justify-content-center"
           >
             <iframe
+              data-aos="slide-right"
               class="embed-responsive-item img-thumbnail"
               width="350"
               height="220"
@@ -188,10 +188,10 @@
             ></iframe>
           </div>
           <div
-            data-aos="slide-right"
             class="embed-responsive embed-responsive-4by3 col-md d-flex justify-content-center"
           >
             <iframe
+              data-aos="slide-right"
               class="embed-responsive-item img-thumbnail"
               width="350"
               height="220"
@@ -252,10 +252,10 @@
       <div class="container mt-5 mb-5">
         <div class="row aboutpic">
           <div
+            data-aos="slide-right"
             class="col-md-3 d-flex justify-content-center mb-1 serviceshover"
           >
             <img
-              data-aos="slide-right"
               class="img-fluid img-thumbnail"
               src="images/1.jpg"
               alt=""
@@ -263,10 +263,10 @@
             />
           </div>
           <div
+            data-aos="slide-right"
             class="col-md-3 d-flex justify-content-center mb-1 serviceshover"
           >
             <img
-              data-aos="slide-right"
               class="img-fluid img-thumbnail"
               src="images/2.jpg"
               alt=""
@@ -274,10 +274,10 @@
             />
           </div>
           <div
+            data-aos="slide-right"
             class="col-md-3 d-flex justify-content-center mb-1 serviceshover"
           >
             <img
-              data-aos="slide-right"
               class="img-fluid img-thumbnail"
               src="images/3.jpg"
               alt=""
@@ -285,10 +285,10 @@
             />
           </div>
           <div
+            data-aos="slide-right"
             class="col-md-3 d-flex justify-content-center mb-2 serviceshover"
           >
             <img
-              data-aos="slide-right"
               class="img-fluid img-thumbnail"
               src="images/4.jpg"
               alt=""
@@ -308,7 +308,7 @@
           </h1>
         </div>
         <div class="row">
-          <div data-aos="slide-up" class="col-md-6 col-lg-3">
+          <div class="col-md-6 col-lg-3">
             <a
               href=""
               data-bs-target="#exampleModalToggle"
@@ -356,7 +356,7 @@
             </a>
           </div>
 
-          <div data-aos="slide-up" class="col-md-6 col-lg-3">
+          <div class="col-md-6 col-lg-3">
             <a
               href=""
               data-bs-target="#prayermeetingmodal"
@@ -364,6 +364,7 @@
               class="text-decoration-none"
             >
               <div
+                data-aos="slide-up"
                 class="card mb-1 border-white border-3"
                 style="width: 150px; margin: 0 auto"
               >
@@ -1018,60 +1019,47 @@
         </div>
         <div class="row" id="contact">
           <div class="col-md pb-2">
-            <form class="form-control needs-validation" novalidate>
+            <form id="contactme1" method="post">
               <div class="form-floating mb-3">
                 <input
                   type="text"
                   class="form-control"
-                  id="floatingInput9"
+                  name="floatingInput9"
                   placeholder="name@example.com"
-                  required
                 />
                 <label for="floatingInput9">Name</label>
-                <div class="invalid-feedback"></div>
               </div>
 
               <div class="form-floating mb-3">
                 <input
                   type="email"
                   class="form-control"
-                  id="floatingInput8"
+                  name="floatingInput8"
                   placeholder="name@example.com"
-                  required
                 />
                 <label for="floatingInput8">Email address</label>
-                <div class="invalid-feedback"></div>
               </div>
               <div class="form-floating mb-3">
                 <input
                   type="number"
                   class="form-control"
-                  id="floatingInput7"
+                  name="floatingInput7"
                   placeholder="name@example.com"
-                  required
                 />
                 <label for="floatingInput7">Phone Number</label>
-                <div class="invalid-feedback"></div>
               </div>
 
               <div class="form-floating">
                 <textarea
                   class="form-control"
                   placeholder="Leave a comment here"
-                  id="floatingTextarea6"
+                  name="floatingTextarea6"
                   style="height: 100px"
-                  required
                 ></textarea>
                 <label for="floatingTextarea6">Message/Inquiry</label>
-                <div class="invalid-feedback"></div>
               </div>
               <div class="mt-3 mb-2">
-                <button
-                  type="reset"
-                  class="btn btn-secondary"
-                  data-bs-toggle="modal"
-                  data-bs-target="#thankyoumodal"
-                >
+                <button type="submit" class="btn btn-secondary">
                   Send Message
                 </button>
               </div>
@@ -1123,7 +1111,9 @@
                     id="recipient-name"
                     required
                   />
-                  <div class="invalid-feedback">Please choose a username.</div>
+                  <div class="invalid-feedback">
+                    Please fill out this field.
+                  </div>
                 </div>
 
                 <div class="">
@@ -1136,7 +1126,9 @@
                     id="recipient-name0"
                     required
                   />
-                  <div class="invalid-feedback">Please choose a username.</div>
+                  <div class="invalid-feedback">
+                    Please fill out this field.
+                  </div>
                 </div>
                 <div class="">
                   <label for="recipient-name1" class="col-form-label"
@@ -1148,7 +1140,9 @@
                     id="recipient-name1"
                     required
                   />
-                  <div class="invalid-feedback">Please choose a username.</div>
+                  <div class="invalid-feedback">
+                    Please fill out this field.
+                  </div>
                 </div>
                 <div class="">
                   <label for="message-text" class="col-form-label"
@@ -1159,7 +1153,9 @@
                     id="message-text"
                     required
                   ></textarea>
-                  <div class="invalid-feedback">Please choose a username.</div>
+                  <div class="invalid-feedback">
+                    Please fill out this field.
+                  </div>
                 </div>
                 <div class="modal-footer">
                   <button
@@ -1277,10 +1273,10 @@
             },
           },
           messages: {
-            name: "Please enter name",
-            floatingInput1: "Please enter email",
-            floatingInput2: "Please enter number",
-            floatingTextarea2: "Please enter your message",
+            name: "Please fill out this field.",
+            floatingInput1: "Please fill out this field.",
+            floatingInput2: "Please fill out this field.",
+            floatingTextarea2: "Please fill out this field.",
           },
 
           errorElement: "div",
@@ -1307,6 +1303,53 @@
       // if ($("#my_form").valid()) {
       //   $("#thankyoumodal").modal("show");
       // }
+    </script>
+    <script>
+      AOS.init();
+      $(document).ready(function () {
+        $("#contactme1").validate({
+          rules: {
+            floatingInput9: {
+              required: true,
+            },
+            floatingInput8: {
+              required: true,
+            },
+            floatingInput7: {
+              required: true,
+            },
+            floatingTextarea6: {
+              required: true,
+            },
+          },
+          messages: {
+            floatingInput9: "Please fill out this field.",
+            floatingInput8: "Please fill out this field.",
+            floatingInput7: "Please fill out this field.",
+            floatingTextarea6: "Please fill out this field.",
+          },
+
+          errorElement: "div",
+          errorPlacement: function (error, element) {
+            error.addClass("invalid-feedback");
+            error.insertAfter(element);
+          },
+          highlight: function (element) {
+            $(element).removeClass("is-valid").addClass("is-invalid");
+          },
+          unhighlight: function (element) {
+            $(element).removeClass("is-invalid").addClass("is-valid");
+          },
+          submitHandler: function (form, event) {
+            event.preventDefault();
+            document.getElementById("contactme1").reset();
+            $("#contactme1")
+              .find(".invalid-feedback")
+              .removeClass("invalid-feedback");
+            $("#thankyoumodal").modal("show");
+          },
+        });
+      });
     </script>
     <script
       type="module"
